@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Cocktail } from 'src/app/interfaces/cocktail.interface';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cocktail-details.component.scss'],
 })
 export class CocktailDetailsComponent implements OnInit {
-
+  @Input() cocktail!:Cocktail;
 
   constructor() {}
 
