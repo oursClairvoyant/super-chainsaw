@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
-import { Cocktail } from 'src/app/interfaces/cocktail.interface';
+import { Cocktail } from 'src/shared/interfaces/cocktail.interface';
 
 @Component({
   selector: 'app-cocktail-list',
