@@ -8,6 +8,7 @@ import { Cocktail } from 'src/shared/interfaces/cocktail.interface';
 })
 export class CocktailListComponent implements OnInit {
   @Input() cocktails?: Cocktail[];
+  @Input() public selectedCocktail: Cocktail = {name: "", img:"", description:"", ingredients: []};
   @Output() private changeCocktail: EventEmitter<number> = new EventEmitter<number>();
   constructor() {}
 
